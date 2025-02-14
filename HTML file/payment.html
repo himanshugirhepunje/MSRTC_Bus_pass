@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="../CSS file/payment.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <form id="paymentForm">
+
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="upi" checked> UPI</label><br>
+                <label><input type="radio" name="payment" value="credit"> Credit Card</label><br>
+                <label><input type="radio" name="payment" value="debit"> Debit Card</label><br>
+                <label><input type="radio" name="payment" value="netbanking"> Net Banking</label><br>
+                <label><input type="radio" name="payment" value="other"> Other</label><br>
+            </div>
+            
+            <label for="upi">UPI:</label>
+            <input type="text" id="upi" name="upi" placeholder="Enter UPI ID" required>
+            <br><br>
+            
+            <label for="card">Debit/Credit Card:</label>
+            <input type="text" id="card" name="card" placeholder="Enter Card Number" required>
+            <br><br>
+            
+            <label for="netBanking">Net Banking:</label>
+            <select id="netBanking" name="netBanking" required>
+                <option value="">Select Bank</option>
+                <option value="SBI">SBI</option>
+                <option value="ICICI">ICICI</option>
+                <option value="HDFC">HDFC</option>
+                <option value="AXIS">AXIS</option>
+            </select>
+            <br><br>
+            
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="../Javascript file/payment.js"></script>
+</body>
+</html>

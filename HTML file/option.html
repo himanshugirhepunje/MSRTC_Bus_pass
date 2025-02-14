@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Pass Option</title>
+    <link rel="stylesheet" href="opage.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color:rgb(198, 238, 225);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#responseMessage {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Pass Option</h1>
+        <div class="buttons">
+            <button id="newPassBtn" class="btn">New Pass</button>
+            <button id="renewPassBtn" class="btn">Renew Pass</button>
+        </div>
+        <p id="responseMessage"></p>
+    </div>
+
+    <script src="opage.js">
+        // Event listener for the "New Pass" button
+document.getElementById('newPassBtn').addEventListener('click', function() {
+    document.getElementById('responseMessage').textContent = 'You have selected New Pass.';
+});
+
+// Event listener for the "Renew Pass" button
+document.getElementById('renewPassBtn').addEventListener('click', function() {
+    document.getElementById('responseMessage').textContent = 'You have selected Renew Pass.';
+});
+
+    </script>
+</body>
+</html>

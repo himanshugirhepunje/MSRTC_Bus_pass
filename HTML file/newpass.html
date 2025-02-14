@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Pass Details</title>
+    <link rel="stylesheet" href="../CSS file/newpass.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fill Pass Details</h1>
+        <form id="passDetailsForm">
+            <label for="source">Source:</label>
+            <select id="source" name="source">
+                <option value="Location A">Location A</option>
+                <option value="Location B">Location B</option>
+                <option value="Location C">Location C</option>
+            </select>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <option value="Location A">Location A</option>
+                <option value="Location B">Location B</option>
+                <option value="Location C">Location C</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" readonly>
+            <label>Date is atomaticaly fetched the one month</label>
+            <br>
+            <label for="cost">Cost:</label>
+            <input type="text" id="cost" name="cost" readonly>
+
+            <button type="button" id="saveButton">Pay ₹<span id="costDisplay">0</span></button>
+        </form>
+    </div>
+
+    <script src="../Javascript file/newpass.js"></script>
+</body>
+</html>
